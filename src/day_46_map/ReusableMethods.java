@@ -16,8 +16,7 @@ public class ReusableMethods {
     }
     public static void tumValueSiraliYazdir(Map<Integer, String> ogrenciMap) {
         int sira=1;
-        for (String each: ogrenciMap.values()
-        ) {
+        for (String each: ogrenciMap.values()) {
             System.out.println(sira+ " - " + each);
             sira++;
         }
@@ -25,8 +24,7 @@ public class ReusableMethods {
     public static List<String> isimSoyisimListesiOlustur(Map<Integer, String> ogrenciMap) {
         List<String> methoddakiList= new ArrayList<>();
         String[] eachArr;
-        for (String each : ogrenciMap.values()
-        ) {
+        for (String each : ogrenciMap.values()) {
             eachArr=each.split(", ");
             methoddakiList.add(eachArr[0] + " " + eachArr[1]);
         }

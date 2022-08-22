@@ -20,14 +20,12 @@ public class C04_Entry {
         System.out.println(sinifListMap);
         // map'in her bir elemanini alt alta yazdirin
         Set<Map.Entry<Integer,String>> sinifEntrySet = sinifListMap.entrySet();
-        for (Map.Entry<Integer,String> each: sinifEntrySet
-        ) {
+        for (Map.Entry<Integer,String> each: sinifEntrySet) {
             System.out.println(each);
         }
         // Map'in tum elemanlarinda varsa Tester kurs ismini QA olarak degistirelim
         String eachValue;
-        for (Map.Entry<Integer,String> each: sinifEntrySet
-        ) {
+        for (Map.Entry<Integer,String> each: sinifEntrySet) {
             eachValue= each.getValue();
             eachValue=eachValue.replace("Tester", "QA");
             each.setValue(eachValue);

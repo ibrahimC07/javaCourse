@@ -19,8 +19,7 @@ public class C02_TekrarSayiyiBulma {
         // harfleri key, kullanim adedini value yaparak bir map olusturalim
         Map<String,Integer> harfKullanimsayilariMap= new TreeMap<>();
         Integer harfKullanimsayisi;
-        for (String each: harflerArr
-        ) {
+        for (String each: harflerArr) {
             if (!harfKullanimsayilariMap.containsKey(each)){
                 harfKullanimsayilariMap.put(each,1);
             }else{

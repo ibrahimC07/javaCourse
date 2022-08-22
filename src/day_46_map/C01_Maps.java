@@ -19,8 +19,7 @@ public class C01_Maps {
         Collection<String> tumValueColl =sinifList.values();
         String[] eachArr;
         int sira=1;
-        for (String each : tumValueColl
-        ) {
+        for (String each : tumValueColl) {
             // buradaki each bize her bir ogrenciye ait
             // ayni yapidaki isim, soyisim, brans bilgilerini iceren String'ler getiriyor
             eachArr= each.split(", ");
@@ -29,7 +28,7 @@ public class C01_Maps {
         }
         // Map'de bulunan ogrencilerin, isim ve soyisimlerini birlestirerek
         // bir sinif listesi olusturun
-        List<String> sinifIsimSoyisimList= new ArrayList<>();
+        List<String> sinifIsimSoyisimList= new  ArrayList<>();
         for (String each : tumValueColl
         ) {
             eachArr=each.split(", ");
